@@ -2,3 +2,6 @@
 my configs for dwm suckless
 - must not have an WM already
 - preferred os for this; Arch family, debian
+
+For other configs to work such as
+- xwallpaper https://man.archlinux.org/man/xwallpaper.1.en
