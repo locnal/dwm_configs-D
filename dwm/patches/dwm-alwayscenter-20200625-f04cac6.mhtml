@@ -1,0 +1,42 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://dwm.suckless.org/patches/alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+Subject: 
+Date: Fri, 1 Dec 2023 20:25:37 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--lszzMoXPpWCG1JAu1Ij6rzg7WzkH1C4J7zK6duP4x4----"
+
+
+------MultipartBoundary--lszzMoXPpWCG1JAu1Ij6rzg7WzkH1C4J7zK6duP4x4----
+Content-Type: text/html
+Content-ID: <frame-90000008BB7FC4846E7735B3E35EA2CC@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://dwm.suckless.org/patches/alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3Dwindows-1252"><link rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css=
+-a42c2b22-56f0-4e04-9b6a-0b4749e1a508@mhtml.blink" /><meta name=3D"color-sc=
+heme" content=3D"light dark"></head><body><pre style=3D"word-wrap: break-wo=
+rd; white-space: pre-wrap;">diff -up dwm/dwm.c dwmmod/dwm.c
+--- dwm/dwm.c	2020-06-25 00:21:30.383692180 -0300
++++ dwmmod/dwm.c	2020-06-25 00:20:35.643692330 -0300
+@@ -1057,6 +1057,8 @@ manage(Window w, XWindowAttributes *wa)
+ 	updatewindowtype(c);
+ 	updatesizehints(c);
+ 	updatewmhints(c);
++	c-&gt;x =3D c-&gt;mon-&gt;mx + (c-&gt;mon-&gt;mw - WIDTH(c)) / 2;
++	c-&gt;y =3D c-&gt;mon-&gt;my + (c-&gt;mon-&gt;mh - HEIGHT(c)) / 2;
+ 	XSelectInput(dpy, w, EnterWindowMask|FocusChangeMask|PropertyChangeMask|S=
+tructureNotifyMask);
+ 	grabbuttons(c, 0);
+ 	if (!c-&gt;isfloating)
+</pre></body></html>
+------MultipartBoundary--lszzMoXPpWCG1JAu1Ij6rzg7WzkH1C4J7zK6duP4x4----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-a42c2b22-56f0-4e04-9b6a-0b4749e1a508@mhtml.blink
+
+@charset "windows-1252";
+=0A
+------MultipartBoundary--lszzMoXPpWCG1JAu1Ij6rzg7WzkH1C4J7zK6duP4x4------
