@@ -5,3 +5,5 @@ my configs for dwm suckless
 
 For other configs to work such as
 - xwallpaper https://man.archlinux.org/man/xwallpaper.1.en
+
+sudo make clean install after patches please..
